@@ -5,7 +5,7 @@
 #include "state.h"
 
 #define state_num 7
-#define iter 10
+#define iter 1000
 
 using namespace std;
 class process

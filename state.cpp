@@ -1,9 +1,10 @@
 #include "state.h"
 
-state::state(int Type, double Term) 
+state::state(int Type, double Term, int Num)
 {
 	type = Type;
 	term = Term;
+	num = Num;
 }
 
 void state::transtion(process& p) 
@@ -20,6 +21,7 @@ void state::transtion(process& p)
 	double xx;
 	xx = yy;
 	xx = xx / 900;
+	p.Arr = xx;/////
 	switch (this->type)
 	{
 	case 0:

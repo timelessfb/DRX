@@ -2,15 +2,16 @@
 
 process::process(double lamda, double t0, double ton, double ts, double tl, double tpo, double tp, int n, int np)
 {
-	double Lamda = lamda;
-	double T0 = t0;
-	double Ton = ton;
-	double Ts = ts;
-	double Tl = tl;
-	double Tpo = tpo;
-	double Tp = tp;
-	int N = n;
-	int Np = np;
+	Lamda = lamda;
+	T0 = t0;
+	Ton = ton;
+	Ts = ts;
+	Tl = tl;
+	Tpo = tpo;
+	Tp = tp;
+	N = n;
+	Np = np;
+	//cout << Np << endl;
 }
 
 vector<int> process::Type_hit_count(state_num, 0);
@@ -19,8 +20,11 @@ vector<int> process::Type_hit_count(state_num, 0);
 
 void process::process_exe(state& s) 
 {
+	//cout << Np << endl;
+	//Np = 0;
 	while (Np <= iteration) 
 	{
+		//cout << Np << endl;
 		process &p = *this;
 		//s.transtion(*this);
 		s.transtion(p);

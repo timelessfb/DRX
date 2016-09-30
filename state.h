@@ -14,7 +14,7 @@ private:
 	int num;
 	friend class process;///////////other declare?
 public:
-	state(int Type, double Term);
+	state(int Type, double Term, int Num);
 	~state() {};
 	void transtion(process &p);
 };
