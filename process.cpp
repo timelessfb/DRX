@@ -25,9 +25,9 @@ void process::process_exe(state& s)
 	while (Np <= iteration) 
 	{
 		//cout << Np << endl;
-		process &p = *this;
-		//s.transtion(*this);
-		s.transtion(p);
+		//process &p = *this;
+		s.transtion(*this);
+		//s.transtion(p);
 	}
 }
 
